@@ -1,0 +1,122 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_EEPROM:W25Q128JV U?
+U 1 1 62768ABE
+P 5300 3100
+F 0 "U?" H 5000 3600 50  0000 C CNN
+F 1 "W25Q128JV" H 5300 3200 50  0000 C CNN
+F 2 "" H 5300 3250 50  0001 C CNN
+F 3 "" H 5300 3250 50  0001 C CNN
+	1    5300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6276DAC3
+P 5300 3800
+F 0 "#PWR?" H 5300 3550 50  0001 C CNN
+F 1 "GND" H 5305 3627 50  0000 C CNN
+F 2 "" H 5300 3800 50  0001 C CNN
+F 3 "" H 5300 3800 50  0001 C CNN
+	1    5300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3800 5300 3700
+Text HLabel 6000 3400 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	6000 3400 5800 3400
+Wire Wire Line
+	6000 3100 5800 3100
+Wire Wire Line
+	4600 2800 4800 2800
+Wire Wire Line
+	4600 3100 4800 3100
+Text HLabel 4600 3100 0    50   Output ~ 0
+MISO
+Text HLabel 6000 3100 2    50   Input ~ 0
+CLK
+Text HLabel 4600 2800 0    50   Input ~ 0
+~CS
+$Comp
+L power:+3.3V #PWR?
+U 1 1 62773B5B
+P 6300 2000
+F 0 "#PWR?" H 6300 1850 50  0001 C CNN
+F 1 "+3.3V" H 6315 2173 50  0000 C CNN
+F 2 "" H 6300 2000 50  0001 C CNN
+F 3 "" H 6300 2000 50  0001 C CNN
+	1    6300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2000 6300 2100
+Wire Wire Line
+	6300 2100 5900 2100
+Wire Wire Line
+	5300 2100 5300 2600
+$Comp
+L Device:C_Small C?
+U 1 1 62773BED
+P 6300 2300
+F 0 "C?" H 6392 2346 50  0000 L CNN
+F 1 "C_Small" H 6392 2255 50  0000 L CNN
+F 2 "" H 6300 2300 50  0001 C CNN
+F 3 "~" H 6300 2300 50  0001 C CNN
+	1    6300 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 2100
+Wire Wire Line
+	6300 2200 6300 2100
+$Comp
+L power:GND #PWR?
+U 1 1 62773D0A
+P 6300 2500
+F 0 "#PWR?" H 6300 2250 50  0001 C CNN
+F 1 "GND" H 6305 2327 50  0000 C CNN
+F 2 "" H 6300 2500 50  0001 C CNN
+F 3 "" H 6300 2500 50  0001 C CNN
+	1    6300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2500 6300 2400
+Wire Wire Line
+	4700 3800 4700 3400
+Wire Wire Line
+	4700 3400 4800 3400
+$Comp
+L power:GND #PWR?
+U 1 1 62773E52
+P 4700 3800
+F 0 "#PWR?" H 4700 3550 50  0001 C CNN
+F 1 "GND" H 4705 3627 50  0000 C CNN
+F 2 "" H 4700 3800 50  0001 C CNN
+F 3 "" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2800 5900 2800
+Wire Wire Line
+	5900 2800 5900 2100
+Connection ~ 5900 2100
+Wire Wire Line
+	5900 2100 5300 2100
+$EndSCHEMATC

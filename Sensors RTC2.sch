@@ -1,0 +1,255 @@
+EESchema Schematic File Version 4
+LIBS:Amur_nutzlast-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer_RTC:PCF8563T U?
+U 1 1 62835ECA
+P 3500 4200
+AR Path="/62835ECA" Ref="U?"  Part="1" 
+AR Path="/6282480D/62835ECA" Ref="U?"  Part="1" 
+AR Path="/628247D8/62835ECA" Ref="U?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835ECA" Ref="U?"  Part="1" 
+F 0 "U?" H 3500 4778 50  0000 C CNN
+F 1 "PCF8563T" H 3500 4687 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3500 4200 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8563.pdf" H 3500 4200 50  0001 C CNN
+	1    3500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Temperature:LM75B U?
+U 1 1 62835ED1
+P 6000 4200
+AR Path="/62835ED1" Ref="U?"  Part="1" 
+AR Path="/6282480D/62835ED1" Ref="U?"  Part="1" 
+AR Path="/628247D8/62835ED1" Ref="U?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835ED1" Ref="U?"  Part="1" 
+F 0 "U?" H 6000 4878 50  0000 C CNN
+F 1 "LM75B" H 6000 4787 50  0000 C CNN
+F 2 "" H 6000 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm75b.pdf" H 6000 4200 50  0001 C CNN
+	1    6000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 62835ED8
+P 9400 4100
+AR Path="/62835ED8" Ref="J?"  Part="1" 
+AR Path="/6282480D/62835ED8" Ref="J?"  Part="1" 
+AR Path="/628247D8/62835ED8" Ref="J?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835ED8" Ref="J?"  Part="1" 
+F 0 "J?" H 9480 4142 50  0000 L CNN
+F 1 "Conn_01x05" H 9480 4051 50  0000 L CNN
+F 2 "" H 9400 4100 50  0001 C CNN
+F 3 "~" H 9400 4100 50  0001 C CNN
+	1    9400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 62835EDF
+P 6000 3500
+AR Path="/628247D8/62835EDF" Ref="#PWR?"  Part="1" 
+AR Path="/6282480D/62835EDF" Ref="#PWR?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835EDF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 3350 50  0001 C CNN
+F 1 "+3.3V" H 6015 3673 50  0000 C CNN
+F 2 "" H 6000 3500 50  0001 C CNN
+F 3 "" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 62835EE5
+P 9100 3800
+AR Path="/628247D8/62835EE5" Ref="#PWR?"  Part="1" 
+AR Path="/6282480D/62835EE5" Ref="#PWR?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835EE5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9100 3650 50  0001 C CNN
+F 1 "+3.3V" H 9115 3973 50  0000 C CNN
+F 2 "" H 9100 3800 50  0001 C CNN
+F 3 "" H 9100 3800 50  0001 C CNN
+	1    9100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 62835EEB
+P 3500 3600
+AR Path="/628247D8/62835EEB" Ref="#PWR?"  Part="1" 
+AR Path="/6282480D/62835EEB" Ref="#PWR?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835EEB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3500 3450 50  0001 C CNN
+F 1 "+3.3V" H 3515 3773 50  0000 C CNN
+F 2 "" H 3500 3600 50  0001 C CNN
+F 3 "" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62835EF1
+P 3500 4700
+AR Path="/628247D8/62835EF1" Ref="#PWR?"  Part="1" 
+AR Path="/6282480D/62835EF1" Ref="#PWR?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835EF1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3500 4450 50  0001 C CNN
+F 1 "GND" H 3505 4527 50  0000 C CNN
+F 2 "" H 3500 4700 50  0001 C CNN
+F 3 "" H 3500 4700 50  0001 C CNN
+	1    3500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62835EF7
+P 6000 4800
+AR Path="/628247D8/62835EF7" Ref="#PWR?"  Part="1" 
+AR Path="/6282480D/62835EF7" Ref="#PWR?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835EF7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 4550 50  0001 C CNN
+F 1 "GND" H 6005 4627 50  0000 C CNN
+F 2 "" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62835EFD
+P 9100 4400
+AR Path="/628247D8/62835EFD" Ref="#PWR?"  Part="1" 
+AR Path="/6282480D/62835EFD" Ref="#PWR?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835EFD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9100 4150 50  0001 C CNN
+F 1 "GND" H 9105 4227 50  0000 C CNN
+F 2 "" H 9100 4400 50  0001 C CNN
+F 3 "" H 9100 4400 50  0001 C CNN
+	1    9100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4400 9100 4300
+Wire Wire Line
+	9100 4300 9200 4300
+Wire Wire Line
+	9100 4300 9100 4200
+Wire Wire Line
+	9100 4200 9200 4200
+Connection ~ 9100 4300
+Wire Wire Line
+	9100 3800 9100 3900
+Wire Wire Line
+	9100 3900 9200 3900
+Wire Wire Line
+	6000 4800 6000 4700
+$Comp
+L power:GND #PWR?
+U 1 1 62835F0B
+P 6500 4800
+AR Path="/628247D8/62835F0B" Ref="#PWR?"  Part="1" 
+AR Path="/6282480D/62835F0B" Ref="#PWR?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835F0B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6500 4550 50  0001 C CNN
+F 1 "GND" H 6505 4627 50  0000 C CNN
+F 2 "" H 6500 4800 50  0001 C CNN
+F 3 "" H 6500 4800 50  0001 C CNN
+	1    6500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4800 6500 4300
+Wire Wire Line
+	6500 4100 6400 4100
+Wire Wire Line
+	6400 4200 6500 4200
+Connection ~ 6500 4200
+Wire Wire Line
+	6500 4200 6500 4100
+Wire Wire Line
+	6400 4300 6500 4300
+Connection ~ 6500 4300
+Wire Wire Line
+	6500 4300 6500 4200
+Wire Wire Line
+	6000 3700 6000 3500
+Wire Wire Line
+	3500 3800 3500 3600
+NoConn ~ 3900 4300
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 62835F1C
+P 2800 4200
+AR Path="/628247D8/62835F1C" Ref="Y?"  Part="1" 
+AR Path="/6282480D/62835F1C" Ref="Y?"  Part="1" 
+AR Path="/628E0874/628E86C2/62835F1C" Ref="Y?"  Part="1" 
+F 0 "Y?" V 2754 4288 50  0000 L CNN
+F 1 "Crystal_Small" V 2845 4288 50  0000 L CNN
+F 2 "" H 2800 4200 50  0001 C CNN
+F 3 "~" H 2800 4200 50  0001 C CNN
+	1    2800 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 4100 2800 4000
+Wire Wire Line
+	2800 4000 3100 4000
+Wire Wire Line
+	3100 4400 2800 4400
+Wire Wire Line
+	2800 4400 2800 4300
+Wire Wire Line
+	3500 4700 3500 4600
+NoConn ~ 5600 4300
+Text HLabel 1800 2200 0    50   BiDi ~ 0
+SDA
+Text HLabel 1800 2400 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	2000 2200 1800 2200
+Wire Wire Line
+	2000 2400 1800 2400
+Text Label 2000 2200 2    50   ~ 0
+SDA
+Text Label 2000 2400 2    50   ~ 0
+SCL
+Text Label 4000 4100 0    50   ~ 0
+SDA
+Text Label 4000 4000 0    50   ~ 0
+SCL
+Wire Wire Line
+	4000 4000 3900 4000
+Wire Wire Line
+	4000 4100 3900 4100
+Text Label 5400 4200 0    50   ~ 0
+SCL
+Text Label 5400 4100 0    50   ~ 0
+SDA
+Wire Wire Line
+	5400 4100 5600 4100
+Wire Wire Line
+	5400 4200 5600 4200
+Text Label 9000 4100 0    50   ~ 0
+SCL
+Text Label 9000 4000 0    50   ~ 0
+SDA
+Wire Wire Line
+	9000 4000 9200 4000
+Wire Wire Line
+	9000 4100 9200 4100
+$EndSCHEMATC

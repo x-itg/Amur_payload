@@ -1,0 +1,129 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_SwitchedCapacitor:LM2776 U?
+U 1 1 62768DEF
+P 4900 3300
+F 0 "U?" H 5341 3296 50  0000 L CNN
+F 1 "LM2776" H 5341 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4950 2950 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2776.pdf" H 3050 4550 50  0001 C CNN
+	1    4900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62768E56
+P 4900 3800
+F 0 "#PWR?" H 4900 3550 50  0001 C CNN
+F 1 "GND" H 4905 3627 50  0000 C CNN
+F 2 "" H 4900 3800 50  0001 C CNN
+F 3 "" H 4900 3800 50  0001 C CNN
+	1    4900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3800 4900 3700
+$Comp
+L Device:C_Small C?
+U 1 1 62768E85
+P 4200 3400
+F 0 "C?" H 4292 3446 50  0000 L CNN
+F 1 "1µF" H 4292 3355 50  0000 L CNN
+F 2 "" H 4200 3400 50  0001 C CNN
+F 3 "~" H 4200 3400 50  0001 C CNN
+	1    4200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3300 4200 3300
+Wire Wire Line
+	4200 3500 4500 3500
+$Comp
+L Device:C_Small C?
+U 1 1 62768F0F
+P 5800 3400
+F 0 "C?" H 5892 3446 50  0000 L CNN
+F 1 "2.2µF" H 5892 3355 50  0000 L CNN
+F 2 "" H 5800 3400 50  0001 C CNN
+F 3 "~" H 5800 3400 50  0001 C CNN
+	1    5800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62768F8B
+P 5800 3600
+F 0 "#PWR?" H 5800 3350 50  0001 C CNN
+F 1 "GND" H 5805 3427 50  0000 C CNN
+F 2 "" H 5800 3600 50  0001 C CNN
+F 3 "" H 5800 3600 50  0001 C CNN
+	1    5800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3200 5800 3200
+Wire Wire Line
+	5800 3200 5800 3300
+Wire Wire Line
+	5800 3500 5800 3600
+$Comp
+L Device:C_Small C?
+U 1 1 62768FEA
+P 5800 2600
+F 0 "C?" H 5892 2646 50  0000 L CNN
+F 1 "2.2µF" H 5892 2555 50  0000 L CNN
+F 2 "" H 5800 2600 50  0001 C CNN
+F 3 "~" H 5800 2600 50  0001 C CNN
+	1    5800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62769022
+P 5800 2800
+F 0 "#PWR?" H 5800 2550 50  0001 C CNN
+F 1 "GND" H 5805 2627 50  0000 C CNN
+F 2 "" H 5800 2800 50  0001 C CNN
+F 3 "" H 5800 2800 50  0001 C CNN
+	1    5800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2800 5800 2700
+Wire Wire Line
+	5800 2500 5800 2400
+Wire Wire Line
+	5800 2400 4900 2400
+Wire Wire Line
+	4900 2400 4900 3000
+Text HLabel 4500 2400 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	4500 2400 4900 2400
+Connection ~ 4900 2400
+Text HLabel 6200 3200 2    50   Output ~ 0
+VOUT
+Wire Wire Line
+	6200 3200 5800 3200
+Connection ~ 5800 3200
+Text HLabel 4300 3200 0    50   Input ~ 0
+FREQ_SUPP_EN
+Wire Wire Line
+	4300 3200 4500 3200
+Text Label 5800 3200 0    50   ~ 0
+-5V
+$EndSCHEMATC

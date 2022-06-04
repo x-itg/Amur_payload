@@ -1,0 +1,466 @@
+EESchema Schematic File Version 4
+LIBS:Amur_nutzlast-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 62769A9D
+P 1700 1700
+F 0 "J1" H 1620 2217 50  0000 C CNN
+F 1 "Conn_01x08" H 1620 2126 50  0000 C CNN
+F 2 "" H 1700 1700 50  0001 C CNN
+F 3 "~" H 1700 1700 50  0001 C CNN
+	1    1700 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1400 2000 1400
+Wire Wire Line
+	2000 1400 2000 1500
+Wire Wire Line
+	2000 1500 1900 1500
+Wire Wire Line
+	1900 1600 2000 1600
+Wire Wire Line
+	2000 1600 2000 1700
+Wire Wire Line
+	2000 1700 1900 1700
+Wire Wire Line
+	2200 1700 2000 1700
+Connection ~ 2000 1700
+$Comp
+L power:GND #PWR02
+U 1 1 6276A5B0
+P 2200 1700
+F 0 "#PWR02" H 2200 1450 50  0001 C CNN
+F 1 "GND" V 2205 1572 50  0000 R CNN
+F 2 "" H 2200 1700 50  0001 C CNN
+F 3 "" H 2200 1700 50  0001 C CNN
+	1    2200 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 2200 1800 2    50   ~ 0
+CAN_H_1
+Wire Wire Line
+	1900 1800 2200 1800
+Wire Wire Line
+	1900 1900 2200 1900
+Wire Wire Line
+	1900 2000 2200 2000
+Wire Wire Line
+	1900 2100 2200 2100
+Text Label 2200 1900 2    50   ~ 0
+CAN_L_1
+Text Label 2200 2000 2    50   ~ 0
+CAN_H_2
+Text Label 2200 2100 2    50   ~ 0
+CAN_L_2
+$Comp
+L power:+5V #PWR01
+U 1 1 627A9206
+P 2200 1300
+F 0 "#PWR01" H 2200 1150 50  0001 C CNN
+F 1 "+5V" H 2215 1473 50  0000 C CNN
+F 2 "" H 2200 1300 50  0001 C CNN
+F 3 "" H 2200 1300 50  0001 C CNN
+	1    2200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1300 2200 1400
+Wire Wire Line
+	2200 1400 2000 1400
+Connection ~ 2000 1400
+$Sheet
+S 6900 3200 3000 1500
+U 628E0874
+F0 "Module1" 50
+F1 "Module_1.sch" 50
+F2 "Cristal_2_2" I L 6900 3800 50 
+F3 "Cristal_2_1" I L 6900 3600 50 
+F4 "SDA_2" B R 9900 3400 50 
+F5 "SCL_2" O R 9900 3500 50 
+F6 "MCU_2_SWDIO" I R 9900 3900 50 
+F7 "MCU_2_SWDCLK" I R 9900 4000 50 
+F8 "NRST_2" I R 9900 4100 50 
+F9 "RX_UART_2" I L 6900 4400 50 
+F10 "TX_UART_2" O L 6900 4300 50 
+$EndSheet
+$Sheet
+S 2300 3300 3000 1400
+U 628E4BE1
+F0 "Module2" 50
+F1 "Module_2.sch" 50
+F2 "Cristal_1_1" I L 2300 3800 50 
+F3 "Cristal_1_2" I L 2300 4000 50 
+F4 "SCL_1" O R 5300 3500 50 
+F5 "SDA_1" B R 5300 3600 50 
+F6 "MCU_1_SWDIO" I R 5300 4000 50 
+F7 "MCU_1_SWDCLK" I R 5300 4100 50 
+F8 "NRST_1" I R 5300 4200 50 
+F9 "TX_UART_1" O L 2300 4400 50 
+F10 "RX_UART_1" I L 2300 4500 50 
+$EndSheet
+Wire Wire Line
+	2100 3800 2300 3800
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 62924569
+P 4000 1300
+F 0 "J2" H 4099 1276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4099 1185 50  0000 L CNN
+F 2 "" H 4000 1300 50  0001 C CNN
+F 3 " ~" H 4000 1300 50  0001 C CNN
+	1    4000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4000 2300 4000
+Text Notes 3700 1200 0    50   ~ 0
+SMA connector for \nthe quartz resonator  1
+$Comp
+L Connector:Conn_Coaxial J4
+U 1 1 6292D436
+P 5600 1300
+F 0 "J4" H 5699 1276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5699 1185 50  0000 L CNN
+F 2 "" H 5600 1300 50  0001 C CNN
+F 3 " ~" H 5600 1300 50  0001 C CNN
+	1    5600 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3600 6900 3600
+Wire Wire Line
+	6900 3800 6700 3800
+Wire Wire Line
+	5600 3500 5300 3500
+Wire Wire Line
+	5600 3600 5300 3600
+Wire Wire Line
+	10200 3400 9900 3400
+Wire Wire Line
+	10200 3500 9900 3500
+Text Label 5600 3600 2    50   ~ 0
+SDA_1
+Text Label 5600 3500 2    50   ~ 0
+SCL_1
+Text Label 10200 3400 2    50   ~ 0
+SDA_2
+Text Label 10200 3500 2    50   ~ 0
+SCL_2
+Text Notes 5100 1100 0    50   ~ 0
+SMA connector for \nthe quartz resonator 2
+Text Label 6700 3600 0    50   ~ 0
+2_1
+Text Label 6700 3800 0    50   ~ 0
+2_2
+Text Label 2100 3800 0    50   ~ 0
+1_1
+Text Label 2100 4000 0    50   ~ 0
+1_2
+Wire Wire Line
+	5600 4000 5300 4000
+Wire Wire Line
+	5600 4100 5300 4100
+Wire Wire Line
+	10200 3900 9900 3900
+Wire Wire Line
+	10200 4000 9900 4000
+Text Label 5600 4000 0    50   ~ 0
+MCU_1_SWDIO
+Text Label 5600 4100 0    50   ~ 0
+MCU_1_SWDCLK
+Text Label 10200 3900 0    50   ~ 0
+MCU_2_SWDIO
+Text Label 10200 4000 0    50   ~ 0
+MCU_2_SWDCLK
+Text Notes 1700 2800 0    50   ~ 0
+Conector to bus
+Text Notes 4100 2900 0    50   ~ 0
+Connectors to second part of the payload\n 
+$Comp
+L power:GND #PWR04
+U 1 1 62A5D295
+P 4600 2600
+F 0 "#PWR04" H 4600 2350 50  0001 C CNN
+F 1 "GND" H 4605 2427 50  0000 C CNN
+F 2 "" H 4600 2600 50  0001 C CNN
+F 3 "" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2600 4600 2500
+Wire Wire Line
+	4600 2500 5100 2500
+Wire Wire Line
+	4600 2500 4600 2400
+Wire Wire Line
+	4600 2400 5100 2400
+Connection ~ 4600 2500
+$Comp
+L power:+3.3V #PWR03
+U 1 1 62A5DA47
+P 4600 1700
+F 0 "#PWR03" H 4600 1550 50  0001 C CNN
+F 1 "+3.3V" H 4615 1873 50  0000 C CNN
+F 2 "" H 4600 1700 50  0001 C CNN
+F 3 "" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1700 4600 1800
+Wire Wire Line
+	4600 1800 5100 1800
+Wire Wire Line
+	4600 1800 4600 1900
+Wire Wire Line
+	4600 1900 5100 1900
+Connection ~ 4600 1800
+Wire Wire Line
+	4800 2000 5100 2000
+Wire Wire Line
+	4800 2100 5100 2100
+Text Label 4800 2000 0    50   ~ 0
+SDA_1
+Text Label 4800 2100 0    50   ~ 0
+SCL_1
+$Comp
+L Connector_Generic:Conn_01x05 J5
+U 1 1 62A61BB4
+P 7500 1900
+F 0 "J5" H 7580 1942 50  0000 L CNN
+F 1 "Conn_01x05" H 7580 1851 50  0000 L CNN
+F 2 "" H 7500 1900 50  0001 C CNN
+F 3 "~" H 7500 1900 50  0001 C CNN
+	1    7500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J6
+U 1 1 62A61C26
+P 9100 1900
+F 0 "J6" H 9180 1942 50  0000 L CNN
+F 1 "Conn_01x05" H 9180 1851 50  0000 L CNN
+F 2 "" H 9100 1900 50  0001 C CNN
+F 3 "~" H 9100 1900 50  0001 C CNN
+	1    9100 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4100 9900 4100
+Text Label 10200 4100 0    50   ~ 0
+NRST_2
+Wire Wire Line
+	5600 4200 5300 4200
+Text Label 5600 4200 0    50   ~ 0
+NRST_1
+Wire Wire Line
+	7000 2100 7300 2100
+Wire Wire Line
+	7000 1700 7300 1700
+Text Label 6700 1800 0    50   ~ 0
+NRST_1
+Text Label 6700 1900 0    50   ~ 0
+MCU_1_SWDIO
+Text Label 6700 2000 0    50   ~ 0
+MCU_1_SWDCLK
+Text Label 8300 1800 0    50   ~ 0
+MCU_2_SWDIO
+Text Label 8300 1900 0    50   ~ 0
+MCU_2_SWDCLK
+Text Label 8300 2000 0    50   ~ 0
+NRST_2
+Wire Wire Line
+	8300 1800 8900 1800
+Wire Wire Line
+	8300 1900 8900 1900
+Wire Wire Line
+	8300 2000 8900 2000
+$Comp
+L power:+3.3V #PWR05
+U 1 1 62A6B6AB
+P 7000 1600
+F 0 "#PWR05" H 7000 1450 50  0001 C CNN
+F 1 "+3.3V" H 7015 1773 50  0000 C CNN
+F 2 "" H 7000 1600 50  0001 C CNN
+F 3 "" H 7000 1600 50  0001 C CNN
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1600 7000 1700
+Wire Wire Line
+	8600 1600 8600 1700
+Wire Wire Line
+	8600 1700 8900 1700
+$Comp
+L power:+3.3V #PWR07
+U 1 1 62A6D68F
+P 8600 1600
+F 0 "#PWR07" H 8600 1450 50  0001 C CNN
+F 1 "+3.3V" H 8615 1773 50  0000 C CNN
+F 2 "" H 8600 1600 50  0001 C CNN
+F 3 "" H 8600 1600 50  0001 C CNN
+	1    8600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 62A6E1A4
+P 8600 2200
+F 0 "#PWR08" H 8600 1950 50  0001 C CNN
+F 1 "GND" H 8605 2027 50  0000 C CNN
+F 2 "" H 8600 2200 50  0001 C CNN
+F 3 "" H 8600 2200 50  0001 C CNN
+	1    8600 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2200 8600 2100
+Wire Wire Line
+	8600 2100 8900 2100
+$Comp
+L power:GND #PWR06
+U 1 1 62A6EDEA
+P 7000 2200
+F 0 "#PWR06" H 7000 1950 50  0001 C CNN
+F 1 "GND" H 7005 2027 50  0000 C CNN
+F 2 "" H 7000 2200 50  0001 C CNN
+F 3 "" H 7000 2200 50  0001 C CNN
+	1    7000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2200 7000 2100
+Wire Wire Line
+	6700 2000 7300 2000
+Wire Wire Line
+	6700 1900 7300 1900
+Wire Wire Line
+	6700 1800 7300 1800
+Text Notes 6900 1200 0    50   ~ 0
+Program MCU 1
+Text Notes 8500 1200 0    50   ~ 0
+Program MCU 2
+Wire Notes Line
+	9700 800  9700 2900
+Wire Notes Line
+	900  2900 900  800 
+Wire Notes Line
+	3200 800  3200 2900
+Wire Notes Line
+	6200 800  6200 2900
+Text Notes 7500 2800 0    50   ~ 0
+Programming connectors\n
+Text Label 1800 4400 0    50   ~ 0
+TX_UART_1
+Text Label 1800 4500 0    50   ~ 0
+RX_UART_1
+Wire Wire Line
+	1800 4400 2300 4400
+Wire Wire Line
+	1800 4500 2300 4500
+Text Label 6400 4300 0    50   ~ 0
+TX_UART_2
+Text Label 6400 4400 0    50   ~ 0
+RX_UART_2
+Wire Wire Line
+	6400 4300 6900 4300
+Wire Wire Line
+	6400 4400 6900 4400
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 62A978F1
+P 10500 1800
+F 0 "J7" H 10580 1792 50  0000 L CNN
+F 1 "Conn_01x04" H 10580 1701 50  0000 L CNN
+F 2 "" H 10500 1800 50  0001 C CNN
+F 3 "~" H 10500 1800 50  0001 C CNN
+	1    10500 1800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11100 800  11100 2900
+Wire Notes Line
+	900  2900 11100 2900
+Wire Notes Line
+	900  800  11100 800 
+Text Notes 10300 1500 0    50   ~ 0
+DEBUG
+Wire Wire Line
+	3400 1300 3800 1300
+Text Label 3400 1300 0    50   ~ 0
+1_1
+Text Label 3400 1600 0    50   ~ 0
+1_2
+Wire Wire Line
+	4000 1600 4000 1500
+Wire Wire Line
+	3400 1600 4000 1600
+Text Label 4900 1300 0    50   ~ 0
+2_1
+Text Label 4900 1600 0    50   ~ 0
+2_2
+Wire Wire Line
+	4900 1300 5400 1300
+Wire Wire Line
+	4900 1600 5600 1600
+Wire Wire Line
+	5600 1500 5600 1600
+Text Label 9900 1900 0    50   ~ 0
+TX_UART_2
+Text Label 9900 2000 0    50   ~ 0
+RX_UART_2
+Wire Wire Line
+	9900 2000 10300 2000
+Wire Wire Line
+	9900 1900 10300 1900
+Text Label 9900 1700 0    50   ~ 0
+TX_UART_1
+Text Label 9900 1800 0    50   ~ 0
+RX_UART_1
+Wire Wire Line
+	9900 1700 10300 1700
+Wire Wire Line
+	9900 1800 10300 1800
+Text Notes 9900 2800 0    50   ~ 0
+Connector for debuging MCUs
+Text Notes 3600 4900 0    50   ~ 0
+Unit 1\n
+Text Notes 8500 4900 0    50   ~ 0
+Unit 2
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 62AC29F0
+P 5300 2100
+F 0 "J?" H 5380 2092 50  0000 L CNN
+F 1 "Conn_01x08" H 5380 2001 50  0000 L CNN
+F 2 "" H 5300 2100 50  0001 C CNN
+F 3 "~" H 5300 2100 50  0001 C CNN
+	1    5300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2200 5100 2200
+Wire Wire Line
+	4800 2300 5100 2300
+Text Label 4800 2200 0    50   ~ 0
+SDA_2
+Text Label 4800 2300 0    50   ~ 0
+SCL_2
+$EndSCHEMATC
